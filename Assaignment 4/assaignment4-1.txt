@@ -1,0 +1,123 @@
+Methods of Accessing Elements In DOM
+
+
+Case 1 :- Using class
+ 
+ ex :- 
+ <html>
+ <head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Srinivas Assaignment 4</title>
+ <style>
+ .demo {
+     background-color : blue;
+     height : 200px;
+     width : 400px; ; 
+     text-align : center;
+    }
+ </style> 
+ </head> 
+ <body>	
+ <div class="demo">
+  Hi
+ </div>
+<script src=assaignment4-1.js>
+</script>
+</body>
+</html>  
+
+   assaignment4-1.js
+ 
+   var class=document.getElementsByClassName("demo");
+   console.log(class[0].innerText);
+   
+Explanation :-
+    
+	Here class elements are stired in the form of arrays, In order to fetch the values we need to mention the index of the paricular array 
+	if we want to fetch all the values we need to use looping techniques.
+ 
+
+
+
+Case 2 :- using Tags 
+
+
+ex:-
+
+<html>
+ <head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Srinivas Assaignment 4</title>
+ <style>
+ .demo {
+     background-color : blue;
+     height : 200px;
+     width : 400px; ; 
+     text-align : center;
+    }
+ </style> 
+ </head> 
+ <body>	
+ <div>
+  Hi
+ </div>
+<script src=assaignment4-1.js>
+</script>
+</body>
+</html>  
+
+   assaignment4-1.js
+   
+   var tag=document.getElementsByTagName("h1")
+   console.log(tag[0].innerText);
+   
+   
+   
+Explanation :-
+ 
+
+Similar to Class, Tags also store the in the form of arrays, in order to fetch the data we need to mention the index of the array. In order to get whole values we need to iterate the loop.  
+
+
+
+Case 3 :- Using Id
+
+ex:-
+
+<html>
+ <head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Srinivas Assaignment 4</title>
+ <style>
+ .demo {
+     background-color : blue;
+     height : 200px;
+     width : 400px; ; 
+     text-align : center;
+    }
+ </style> 
+ </head> 
+ <body>	
+ <div id="tag">
+  Hi
+ </div>
+<script src=assaignment4-1.js>
+</script>
+</body>
+</html>  
+  
+  
+   assaignment4-1.js
+   
+   var tag=document.getElementById("tag");
+   console.log(tag.innerText);
+   
+   Explanation :-
+     
+	 In tag the value s stored in the form of id which is unique form, so thes values are not stored in the form of arrays. So only individual data is attained or received when console.log is executed.
+     
+	 
+	 Similar to tags and class we can use Name,TagName ad thier operation is similar to tags;
